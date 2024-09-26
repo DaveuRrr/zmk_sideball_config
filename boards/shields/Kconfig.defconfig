@@ -1,0 +1,6 @@
+if SHIELD_SIDEBALL
+
+config ZMK_KEYBOARD_NAME
+    default "SideBall"
+
+endif
