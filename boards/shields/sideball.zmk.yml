@@ -1,0 +1,17 @@
+file_format: "1"
+id: sideball
+name: SideBall
+type: shield
+url: https://github.com/DaveuRrr/zmk_pmw3610_trackball
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+#exposes:
+#  - i2c_oled
+#features:
+#  - keys
+#  - display
+#siblings:
+#  - corne_left
+#  - corne_right
