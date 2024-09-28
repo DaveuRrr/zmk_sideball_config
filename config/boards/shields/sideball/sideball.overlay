@@ -68,10 +68,6 @@
 
         map = <RC(0,0)>;
     };
-
-    zephyr_udc0: &usbd {
-    status = "okay";
-};
 };
 
 / {
