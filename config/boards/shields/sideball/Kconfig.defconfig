@@ -3,7 +3,6 @@ if SHIELD_SIDEBALL
 config ZMK_KEYBOARD_NAME
     default "sideball"
 
-endif
-
 config SPI
 	default y
+endif
