@@ -1,9 +1,9 @@
 manifest:
   remotes:
     # - name: zmkfirmware
-      url-base: https://github.com/petejohanson
+    #  url-base: https://github.com/petejohanson
     # - name: badjeff
-      url-base: https://github.com/badjeff
+    #  url-base: https://github.com/badjeff
     - name: sadekbaroudi
       url-base: https://github.com/sadekbaroudi
   projects:
