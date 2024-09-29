@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/petejohanson
     # - name: badjeff
       url-base: https://github.com/badjeff
-    # - name: sadekbaroudi
+    - name: sadekbaroudi
       url-base: https://github.com/sadekbaroudi
   projects:
     # - name: zmk
