@@ -1,13 +1,13 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&usbd {
-    status = "okay";
-    cdc_acm_uart: cdc_acm_uart {
-		compatible = "zephyr,cdc-acm-uart";
-		label = "CDC_ACM_0";
-	};
-};
+//&usbd {
+//    status = "okay";
+//    cdc_acm_uart: cdc_acm_uart {
+//		compatible = "zephyr,cdc-acm-uart";
+//		label = "CDC_ACM_0";
+//	};
+//};
 
 &pinctrl {
         spi0_default: spi0_default {
