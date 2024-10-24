@@ -17,7 +17,7 @@
             // Define tap and hold actions
             //tap-binding = <&bt BT_SEL 0>;  // Tap to select profile 0
             //hold-binding = <&bt BT_CLR>;   // Hold to clear profile
-            bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
+            bindings = <&bt>, <&bt>;
 
             // Configuration for hold-tap behavior
             tapping-term-ms = <3000>;  // 3-second hold time
@@ -29,7 +29,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <&ble>;  // Bind the behavior to a key
+            bindings = <&ble BT_SEL 0 BT_CLR>;  // Bind the behavior to a key
         };
     };
 };
