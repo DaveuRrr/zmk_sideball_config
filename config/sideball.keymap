@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
 
@@ -18,7 +19,7 @@
             //tap-binding = <&bt BT_SEL 0>;  // Tap to select profile 0
             //hold-binding = <&bt BT_CLR>;   // Hold to clear profile
             #binding-cells = <2>;
-            bindings = <&bt>, <&bt>;
+            bindings = <&mkp>, <&bt>;
 
             // Configuration for hold-tap behavior
             tapping-term-ms = <3000>;  // 3-second hold time
@@ -30,7 +31,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <&ble BT_SEL 0 BT_CLR>;  // Bind the behavior to a key
+            bindings = <&ble LCLK BT_CLR>;  // Bind the behavior to a key
         };
     };
 };

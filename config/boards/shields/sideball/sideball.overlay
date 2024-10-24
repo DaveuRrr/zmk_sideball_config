@@ -37,6 +37,11 @@
     };
 };
 
+&bt_ready {
+    status = "okay";
+    bt-ready = <&bt BT_SEL 0>;
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
