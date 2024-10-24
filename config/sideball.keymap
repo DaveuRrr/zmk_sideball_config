@@ -14,11 +14,11 @@
         ble: behavior_ble {
             compatible = "zmk,behavior-hold-tap";
             label = "Bluetooth Switching";
-            # Define tap and hold actions
+            // Define tap and hold actions
             tap-binding = <&bt BT_SEL 0>;  // Tap to select profile 0
             hold-binding = <&bt BT_CLR>;   // Hold to clear profile
 
-            # Configuration for hold-tap behavior
+            // Configuration for hold-tap behavior
             tapping-term-ms = <3000>;  // 3-second hold time
             flavor = "hold-preferred";
         };
