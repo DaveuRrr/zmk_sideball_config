@@ -4,10 +4,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: inorichi
       url-base: https://github.com/inorichi
-    # - name: sadekbaroudi
-    #   url-base: https://github.com/sadekbaroudi
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,12 +14,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
-    #   path: drivers/zmk-pmw3610-driver
-    # - name: zmk-pmw3610-driver
-    #   remote: sadekbaroudi
-    #   revision: main
-    # - name: zmk-pmw3610-driver
-    #   remote: badjeff
-    #   revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
   self:
     path: config
