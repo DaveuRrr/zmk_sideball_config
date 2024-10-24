@@ -19,5 +19,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: sideball
-    snippet: zmk-usb-logging
+    shield: sideball rgbled_adapter
