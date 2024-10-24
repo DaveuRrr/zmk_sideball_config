@@ -17,7 +17,7 @@
             // Define tap and hold actions
             //tap-binding = <&bt BT_SEL 0>;  // Tap to select profile 0
             //hold-binding = <&bt BT_CLR>;   // Hold to clear profile
-            bindings = <&bt>, <&bt>;
+            #bindings = <&bt>, <&bt>;
 
             // Configuration for hold-tap behavior
             tapping-term-ms = <3000>;  // 3-second hold time
