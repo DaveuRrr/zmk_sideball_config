@@ -12,18 +12,11 @@
 / {
 
     behaviors {
-        ble: behavior_ble {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Bluetooth Switching";
-            // Define tap and hold actions
-            //tap-binding = <&bt BT_SEL 0>;  // Tap to select profile 0
-            //hold-binding = <&bt BT_CLR>;   // Hold to clear profile
-            #binding-cells = <2>;
-            bindings = <&mkp>, <&bt>;
-
-            // Configuration for hold-tap behavior
-            tapping-term-ms = <3000>;  // 3-second hold time
-            flavor = "hold-preferred";
+        ble: tap_dance_ble {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
         };
     };
 
@@ -31,7 +24,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <&ble LCLK BT_CLR>;  // Bind the behavior to a key
+            bindings = <&ble>;  // Bind the behavior to a key
         };
     };
 };
