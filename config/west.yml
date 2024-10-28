@@ -2,8 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
-    - name: inorichi
-      url-base: https://github.com/inorichi
+    # - name: inorichi
+    #   url-base: https://github.com/inorichi
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
@@ -11,8 +13,11 @@ manifest:
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
+    # - name: zmk-pmw3610-driver
+    #   remote: inorichi
+    #   revision: main
     - name: zmk-pmw3610-driver
-      remote: inorichi
+      remote: sadekbaroudi
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
