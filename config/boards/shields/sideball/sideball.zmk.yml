@@ -8,11 +8,3 @@ requires:
 features:
   - keys
   - pointer
-#exposes:
-#  - i2c_oled
-#features:
-#  - keys
-#  - display
-#siblings:
-#  - corne_left
-#  - corne_right

@@ -24,7 +24,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <&ble>;  // Bind the behavior to a key
+            bindings = <&bt BT_NXT>, <&bt BT_CLR>;  // Bind the behavior to a key
         };
     };
 };

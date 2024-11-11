@@ -40,19 +40,23 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+        // zmk,matrix-transform = &default_transform;
     };
 
     kscan0: kscan_0 {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+        compatible = "zmk,kscan-gpio-direct"; // -matrix";
+        // diode-direction = "col2row";
         wakeup-source;
 
-        col-gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>;
+        //col-gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>;
 
-        row-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        //row-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+
+        gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>,
+                <&xiao_d 1 GPIO_ACTIVE_HIGH>;
     };
 
+    /*
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <2>;
@@ -60,7 +64,8 @@
 
         map = <RC(0,0)>;
     };
-
+    */
+    
     aliases {
         led-red = &led0;
         led-green = &led1;
