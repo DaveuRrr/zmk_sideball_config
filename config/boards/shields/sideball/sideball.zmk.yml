@@ -1,10 +1,10 @@
-file_format: "1"
-id: sideball
-name: SideBall
-type: shield
-url: https://github.com/DaveuRrr/zmk_pmw3610_trackball
-requires:
-  - seeeduino_xiao_ble
-features:
-  - keys
-  - pointer
+# file_format: "1"
+# id: sideball
+# name: SideBall
+# type: shield
+# url: https://github.com/DaveuRrr/zmk_pmw3610_trackball
+# requires:
+#   - seeeduino_xiao_ble
+# features:
+#   - keys
+#   - pointer
